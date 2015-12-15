@@ -1,3 +1,4 @@
+
 App = React.createClass({
 
   handleSubmit(event) {
@@ -24,16 +25,25 @@ App = React.createClass({
               type="text"
               ref="textInput"
               placeholder="What is your mood?" />
-
           </form>
-
         </header>
         </div>
-        <div className="container" id="board">
-
-       
-           <img src="https://source.unsplash.com/600x900/?mountains" class="img-responsive" alt="Image"></img>
-        </div>
+        <div class="portfolio">
+          <ul id="grid">
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature/1" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>
+             <li><a href="newgrid.html"><img src="https://source.unsplash.com/category/nature" /></a></li>   
+          </ul>                                    
+          </div>
         </div>
     );
   }
