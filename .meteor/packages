@@ -22,6 +22,5 @@ react
 twbs:bootstrap
 kadira:react-layout
 kadira:flow-router
-iron:router
 lawshe:full-page
 universe:react-grid-layout

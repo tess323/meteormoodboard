@@ -16,7 +16,7 @@ App = React.createClass({
 
   render: function() {
     return (
-    <div className="container">
+    <div className="container" id="boardBox">
         <div className="container">
         <header>
           <h1>Moodboard</h1>
