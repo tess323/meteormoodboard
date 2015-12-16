@@ -17,6 +17,8 @@ body {
   margin: 0;*/
 
   font-size: 14px;
+  font-family: 'Raleway Dots';
+  color:#34495e;
 }
 #welcome{
   opacity: 0.35;
@@ -64,7 +66,7 @@ form {
 ul#grid {
   list-style: none;
   margin: 20px auto 0;
-  width: 550px;  
+  width: 750px;  
   }
 
 #grid li {
@@ -75,7 +77,7 @@ ul#grid {
 .portfolio {
   padding: 20px;
   margin-left: auto; margin-right: auto;  margin-top:50px;
-  width: 700px;
+  width: 713px;
   /*these two properties will be inherited by .portfolio h4 and .portfolio p */
   font-family: 'GraublauWeb', arial, serif; 
   text-align: center;
@@ -86,13 +88,13 @@ ul#grid {
   font-size: 35px;
   font-weight: normal;
   color: #58595b;
-  width: 550px;
+  width: 750px;
   }
   
 .portfolio p {
   font-size: 15px;
   color: #58595b;
-  width: 550px;
+  width: 750px;
   }
 
 #grid li a:hover img {
@@ -103,13 +105,18 @@ ul#grid {
   background-color: white;
   padding: 7px; margin: 0;
   border: 1px dotted #58595b;
-  width: 83px;
-  height: 98px;
+  width: 150px;
+  height: 160px;
   }
 
 #grid li:first-child img {
   width: 192px;
-  height: 221px;
+  height: 325px;
+}
+
+#grid li:last-child img {
+  width: 353px;
+  height: 160px;
 }
   
 #grid li a {
