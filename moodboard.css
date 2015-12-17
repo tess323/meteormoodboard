@@ -203,6 +203,10 @@ body {
 #page3{
   height: 1000px;
 }
+form{
+  display:inline block;
+  background-color: salmon;
+}
 #board{
    border-style: solid;
   border-color: black;

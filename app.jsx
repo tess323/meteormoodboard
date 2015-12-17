@@ -63,16 +63,15 @@ App = React.createClass({
 
   <div id="page2">
     <a id="questions" class="smooth"></a>
-      <h3> I am a </h3>
-            <form className="search" onSubmit={this.handleSubmit} >  
+      <h3> I am  </h3>
+            <form class="search" syle="display: inline;" onSubmit={this.handleSubmit} >  
                   <select class="form-control" type="text" ref="peopleInput">
-                  
                       <option value="Nature">An Explorer</option>
                       <option value="People">An Anthropologist</option>
                       <option value="Technology">A Developer</option>
                       <option value="Objects">A Designer</option>
                       <option value="Food">A Cook</option>
-                      <option value="Buildings">A Dweller</option>              
+                      <option value="Buildings">A Builder</option>              
 
                   </select>
 
@@ -126,7 +125,7 @@ App = React.createClass({
              <li><a href="newgrid.html"><img src="https://source.unsplash.com/random" /></a></li>
              <li><a href="newgrid.html"><img src="https://source.unsplash.com/all/city" /></a></li>
              <li><a href="newgrid.html"><img src="https://source.unsplash.com/1600x900/?white" /></a></li>
-             <li><h1>{words}</h1></li>
+             <li><h1 class="animated infinite pulse">{words}</h1></li>
         
           </ul> 
 
