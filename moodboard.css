@@ -202,6 +202,7 @@ h4{
 }
 #page2{
   height: 1000px;
+  font:1.3em;
 }
 #page3{
   height: 1000px;
@@ -318,6 +319,12 @@ ul#grid {
 
 #words{
   font-size: 100px;
+}
+#questions{
+  position:absolute;
+  left:50%;
+  margin=top:50%;
+  margin:-100px 0 0 -150px;
 }
 
 

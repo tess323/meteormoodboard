@@ -70,7 +70,7 @@ App = React.createClass({
 
   <div id="page2">
     <a id="questions" class="smooth"></a>
-      <h3> I am  </h3>
+       I am  
             <form class="search" syle="display: inline" onSubmit={this.handleSubmit} >  
                   <select class="form-control" type="text" ref="peopleInput">
                       <option value="Nature">An Explorer</option>
@@ -82,7 +82,7 @@ App = React.createClass({
 
                   </select>
 
-                <h3>Working in shades of</h3>
+                Working in shades of
                       <select class="form-control" type="text" ref="colorInput">
                       
                       <option value="White">White</option>
@@ -94,7 +94,7 @@ App = React.createClass({
                       <option value="bright">Shine</option>
 
                       </select>
-                <h3>I want my board to feel</h3>
+                I want my board to feel
                       <select class="form-control" type="text" ref="feelInput">
                       
                       <option value="Rural">Rustic</option>
@@ -104,12 +104,12 @@ App = React.createClass({
                     
 
                       </select>
-              <h3>One word to describe my inspiration would be</h3>
+              One word to describe my inspiration would be
               <input
                 type="text"
                 ref="textInput"
                 placeholder="What inspires you?" />
-            <h3>I am trying to say</h3>
+            I am trying to say
                <input
                 type="text"
                 ref="wordInput"
@@ -120,7 +120,6 @@ App = React.createClass({
                 </button>
           </form>
         </div>
-    
         </div>
 
 
