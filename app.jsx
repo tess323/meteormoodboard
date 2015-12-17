@@ -18,33 +18,65 @@ App = React.createClass({
     console.log(job);
     console.log(words)
  
+
+
+
     
  
     // Clear form
     React.findDOMNode(this.refs.textInput).value = "";
   },
 
+
+
   render: function() {
     var imgSrc = "https://source.unsplash.com/191x325/?" + this.state.query
     var imgProf = "https://source.unsplash.com/category/" + this.state.profession
     var imgColor= "https://source.unsplash.com/all/?" + this.state.color
     var words = this.state.words
+
+
+
+
+
     return (
+       
     <div className="container" id="boardBox">
         <div className="container">
-        <header>
-          <h1>Moodboard</h1>
+     
+
+
+
+
+
+  <div class="row">
+  <div id="page1" class=".col-xs-6 .col-md-4">
+    <a id="splash" class="smooth"></a>
+          <h1 id="welcome">Moodboard<br />
+          <small>A place to find inspiration for your next project</small></h1>
+           <a href="#questions"><span className="glyphicon glyphicon-menu-down" aria-hidden="true" id="down"></span></a>
+    </div>
+  </div>
+
+
+
+
+  <div id="page2">
+    <a id="questions" class="smooth"></a>
+      <h3> I am a </h3>
             <form className="search" onSubmit={this.handleSubmit} >  
                   <select class="form-control" type="text" ref="peopleInput">
                   
-                      <option value="People">People</option>
-                      <option value="Technology">Tech</option>
-                      <option value="Nature">Nature</option>
-                      <option value="Objects">Objects</option>
-                      <option value="Food">Food</option>
-                      <option value="Buildings">Buildings</option>
+                      <option value="Nature">An Explorer</option>
+                      <option value="People">An Anthropologist</option>
+                      <option value="Technology">A Developer</option>
+                      <option value="Objects">A Designer</option>
+                      <option value="Food">A Cook</option>
+                      <option value="Buildings">A Dweller</option>              
 
                   </select>
+
+                <h3>Working in shades of</h3>
                       <select class="form-control" type="text" ref="colorInput">
                       
                       <option value="White">White</option>
@@ -56,24 +88,33 @@ App = React.createClass({
                       <option value="bright">Shine</option>
 
                       </select>
+              <h3>One word to describe my inspiration would be</h3>
               <input
                 type="text"
                 ref="textInput"
                 placeholder="What inspires you?" />
-
+            <h3>I am trying to say</h3>
                <input
                 type="text"
                 ref="wordInput"
-                placeholder="What do you want to say?" />
-                <button type="submit" className="btn btn-primary">Submit</button>
+                placeholder="What do you want to say?" /> <br></br>
+
+                <button type="submit" className="btn btn-default btn-lg">
+                 <span className="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <a href="#moodboard"> Submit</a>
+                </button>
           </form>
-
-
-
-        </header>
         </div>
+    
+        </div>
+
+
+
+
+
+
       
-        
+  <div id="page3">
+    <a id="moodboard" class="smooth"></a>  
         <div class="portfolio">
           <ul id="grid">
              <li><a href="newgrid.html"><img src={imgSrc} /></a></li>
@@ -88,9 +129,17 @@ App = React.createClass({
              <li><h1>{words}</h1></li>
         
           </ul> 
-          
 
-          </div>
+        </div>
+         
+      </div>
+      <a href="javascript:window.location.reload();"><span className="glyphicon glyphicon-refresh" aria-hidden="true" id="down"></span></a>
+
+
+
+
+
+
         </div>
     );
   }
