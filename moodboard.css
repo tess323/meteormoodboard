@@ -190,8 +190,12 @@ h4{
 }
 #welcome{
   font-style: bold;
-  font-size: 118px;
-  margin-top:40px;
+  font-size: 130px;
+  margin-top:20px;
+
+}
+small{
+  font-size: .7em;
 }
 #down{
   display:block;
@@ -200,6 +204,21 @@ h4{
   font-size: 55px;
   color:rgba(52, 73, 94,1.0);
 }
+
+.dotted {
+    border-width: 0px; 
+    border-bottom: 2px;
+    border-style: dotted;
+    background-color:#E2E5E5; 
+    border-color: #34495e;
+   
+}
+.dotted:focus {
+   
+    background-color:#CAD1D1 ; 
+    border-color: #34495e;
+  
+}
 #page2{
   height: 1000px;
   font:1.3em;
@@ -207,9 +226,15 @@ h4{
 #page3{
   height: 1000px;
 }
+#page4{
+  height: 1000px;
+}
 form{
   display:inline block;
-  background-color: salmon;
+  font:20px;
+}
+option{
+  font:20px;
 }
 #board{
    border-style: solid;
@@ -323,10 +348,32 @@ ul#grid {
 #questions{
   position:absolute;
   left:50%;
-  margin=top:50%;
+  margin-top:50%;
   margin:-100px 0 0 -150px;
 }
+#build{
+  font-size: 35px;
+  font-style:bold;
+  line-height: 2;
+}
 
+#about{
+  position:absolute;
+  left:50%;
+  margin-top:50%;
+  margin:-100px 0 0 -150px;
+
+  background-color:rgba(52, 73, 94,1.0);
+}
+
+#photo{
+  display: inline-block;
+  width:140px;
+  height: 150px;
+  float:left;
+  margin-right:15px;
+
+}
 
 
 

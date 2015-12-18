@@ -1,7 +1,10 @@
 <snippet>
   <content><![CDATA[
 # ${1:Moodboard}
-A one page, mobile-friendly app used to spark inspiration through the generation of moodboards based on user input.
+A one page app used to spark inspiration through the generation of moodboards based on user input.  It can be found at my-moodboard.meteor.com
+
+
+![Alt text](/moodboard/screenshot.jpg?raw=true "Moodboard")
 
 ## Technologies Used
 Moodboard is built and deployed in Meteor using React, JSX, JQuery, HTML and CSS.  It makes calls to the Unsplash API and utilized xcode for mobile IOS deployment.

@@ -8,13 +8,13 @@ App = React.createClass({
     event.preventDefault();
  
     // Find the text field via the React ref
-    var search = React.findDOMNode(this.refs.textInput).value.trim();
+    this.state.query = React.findDOMNode(this.refs.textInput).value.trim();
     var job = React.findDOMNode(this.refs.peopleInput).value;
     var shade = React.findDOMNode(this.refs.colorInput).value;
     var message = React.findDOMNode(this.refs.wordInput).value;
     var vibe = React.findDOMNode(this.refs.feelInput).value
 
-    this.setState({query: search, profession: job, color: shade, feel: vibe, word: message});
+    this.setState({query: this.state.query, profession: job, color: shade, feel: vibe, word: message});
 
     console.log(shade);
     console.log(search);
@@ -58,7 +58,7 @@ App = React.createClass({
   <div id="page1" class=".col-xs-6 .col-md-4">
     <a id="splash" class="smooth"></a>
           <h1 id="welcome">Moodboard<br />
-          <small>A place to find inspiration for your next project</small></h1>
+          <small id="desc">A place to find <br /> inspiration for your <br /> next project</small></h1>
           <div id="down">
            <a href="#questions"><span className="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
           </div>
@@ -70,9 +70,11 @@ App = React.createClass({
 
   <div id="page2">
     <a id="questions" class="smooth"></a>
-       I am  
-            <form class="search" syle="display: inline" onSubmit={this.handleSubmit} >  
-                  <select class="form-control" type="text" ref="peopleInput">
+     
+            <form class="search" syle="display: inline" onSubmit={this.handleSubmit} id="build"> 
+              I am &nbsp;
+                  <select class="form-control" type="text" ref="peopleInput" className="dotted">
+                      <option value="">      </option>
                       <option value="Nature">An Explorer</option>
                       <option value="People">An Anthropologist</option>
                       <option value="Technology">A Developer</option>
@@ -82,9 +84,10 @@ App = React.createClass({
 
                   </select>
 
-                Working in shades of
-                      <select class="form-control" type="text" ref="colorInput">
+                 . &nbsp; Working in shades of &nbsp;
+                      <select class="form-control" type="text" ref="colorInput" >
                       
+                      <option value="">      </option>
                       <option value="White">White</option>
                       <option value="Black">Black</option>
                       <option value="Red">Red</option>
@@ -94,9 +97,10 @@ App = React.createClass({
                       <option value="bright">Shine</option>
 
                       </select>
-                I want my board to feel
-                      <select class="form-control" type="text" ref="feelInput">
+                 . &nbsp; I want my board to feel &nbsp;
+                      <select class="form-control" type="text" ref="feelInput" className="dotted">
                       
+                      <option value="">      </option>
                       <option value="Rural">Rustic</option>
                       <option value="Urban">Urban</option>
                       <option value="Beach">Relaxed</option>
@@ -104,16 +108,16 @@ App = React.createClass({
                     
 
                       </select>
-              One word to describe my inspiration would be
-              <input
+              . &nbsp; In a word it is inspired by: &nbsp;
+              <input className="dotted"
                 type="text"
                 ref="textInput"
-                placeholder="What inspires you?" />
-            I am trying to say
-               <input
+                placeholder="" /> . &nbsp;
+            My mission is to &nbsp;
+               <input className="dotted"
                 type="text"
                 ref="wordInput"
-                placeholder="What do you want to say?" /> <br></br>
+                placeholder="" /> <br></br> . &nbsp;
 
                 <button type="submit" className="btn btn-default btn-lg">
                  <span className="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <a href="#moodboard"> Submit</a>
@@ -154,6 +158,12 @@ App = React.createClass({
             <a href="javascript:window.location.reload();"><span className="glyphicon glyphicon-refresh" aria-hidden="true" id="down"></span></a>
             <h4>Try Again</h4>
           </div>
+
+      <div id="page4">
+        <a id="about" class="smooth"></a> 
+          
+          <p><img src="http://i.imgur.com/Ho8qDQl.jpg" class="img-responsive" alt="Image" id="photo" />Tess OBrien is a full stack developer living in Capitol Hill, Seattle. She is passionate about building useful sites that make life just a bit more beautiful.  Please feel free to reach out with questions.</p>
+      </div>
          
     
 
