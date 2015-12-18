@@ -374,6 +374,15 @@ ul#grid {
   margin-right:15px;
 
 }
+.glyphicon-menu-down{
+  display:block;
+  text-align:center;
+  margin-top: 10px;
+  font-size: 55px;
+  color:rgba(52, 73, 94,1.0);
+}
+
+
 
 
 

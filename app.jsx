@@ -59,7 +59,7 @@ App = React.createClass({
     <a id="splash" class="smooth"></a>
           <h1 id="welcome">Moodboard<br />
           <small id="desc">A place to find <br /> inspiration for your <br /> next project</small></h1>
-          <div id="down">
+          <div class="down">
            <a href="#questions"><span className="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
           </div>
     </div>
@@ -120,9 +120,13 @@ App = React.createClass({
                 placeholder="" /> <br></br> . &nbsp;
 
                 <button type="submit" className="btn btn-default btn-lg">
-                 <span className="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <a href="#moodboard"> Submit</a>
+                  Submit
                 </button>
+                <a href="#moodboard"> <span className="glyphicon glyphicon-menu-down" aria-hidden="true" className="down"></span></a>
           </form>
+          <div className="down">
+           <a href="#moodboard"><span className="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+          </div>
         </div>
         </div>
 
