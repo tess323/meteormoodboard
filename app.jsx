@@ -54,9 +54,10 @@ App = React.createClass({
 
 
 
-  <div class="row">
-  <div id="page1" class=".col-xs-6 .col-md-4">
-    <a id="splash" class="smooth"></a>
+  <div class="hello">
+
+  <div id="page1">
+    <a id="splash" class="smooth col-xs-12 col-sm-6 col-md-8"></a>
           <h1 id="welcome">Moodboard<br />
           <small id="desc">A place to find <br /> inspiration for your <br /> next project</small></h1>
           <div class="down">
@@ -85,7 +86,7 @@ App = React.createClass({
                   </select>
 
                  . &nbsp; Working in shades of &nbsp;
-                      <select class="form-control" type="text" ref="colorInput" >
+                      <select class="form-control" type="text" ref="colorInput" className="dotted">
                       
                       <option value="">      </option>
                       <option value="White">White</option>
