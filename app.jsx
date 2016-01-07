@@ -1,4 +1,5 @@
 
+// creating classes to be filled by form
 App = React.createClass({
   getInitialState() {
     return {query: '', profession:'', color:'', word:'', feel:''};
@@ -16,6 +17,7 @@ App = React.createClass({
 
     this.setState({query: this.state.query, profession: job, color: shade, feel: vibe, word: message});
 
+    // testing success of forms
     console.log(shade);
     console.log(search);
     console.log(job);
@@ -32,6 +34,9 @@ App = React.createClass({
     React.findDOMNode(this.refs.textInput).value = "";
   },
 
+// passing input to unsplash API
+
+// building the page using react render
 
 
   render: function() {

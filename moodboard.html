@@ -1,26 +1,30 @@
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="http://i.imgur.com/eeAfP0L.png"/>
-  <title>Moodboard</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.28.1/react-bootstrap.js">
-  <link rel="stylesheet" href="animate.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-	<script>
-	$('.smooth').on('click', function() {
-	    $.smoothScroll({
-	        scrollElement: $('body'),
-	        scrollTarget: '#' + this.id
-	    });
-	    
-	    return false;
-	});
-	</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="http://i.imgur.com/eeAfP0L.png"/>
+      <title>Moodboard</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.28.1/react-bootstrap.js">
+      <link rel="stylesheet" href="animate.min.css">
+      <link href='https://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    	
+      <!-- smooth scroll -->
+      <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    	<script>
+        	$('.smooth').on('click', function() {
+        	    $.smoothScroll({
+        	        scrollElement: $('body'),
+        	        scrollTarget: '#' + this.id
+        	    });
+        	    
+        	    return false;
+        	});
+    	</script>
 
 </head>
  
 <body>
+<!-- navbar -->
  <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
           <div class="navbar-toggler animate">
             <span class="menu-icon"></span>
@@ -56,6 +60,8 @@
 		event.preventDefault();
 		$(this).closest('.navbar-minimal').toggleClass('open');
 	})</script>
+
+  <!-- blank render to build jsx upon -->
   <div id="render-target"></div>
 </body>
 
