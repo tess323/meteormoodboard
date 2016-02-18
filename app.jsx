@@ -46,7 +46,7 @@ App = React.createClass({
     var words = this.state.word
     var imgFeel = "https://source.unsplash.com/150x160/?" + this.state.feel 
 
-
+// served back board
 
 
     return (
@@ -76,7 +76,7 @@ App = React.createClass({
 
   <div id="page2">
     <a id="questions" class="smooth"></a>
-     
+
             <form class="search" syle="display: inline" onSubmit={this.handleSubmit} id="build"> 
               I am &nbsp;
                   <select class="form-control" type="text" ref="peopleInput" className="dotted">
@@ -135,7 +135,6 @@ App = React.createClass({
           </div>
         </div>
         </div>
-
 
 
 

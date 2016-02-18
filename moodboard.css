@@ -411,7 +411,7 @@ ul#grid {
 
 /*mobile styling of the splash and board*/
 
-@media (max-width: 500px) {
+@media (max-width: 1200px) {
   
 
   .search {
@@ -423,30 +423,25 @@ ul#grid {
   font-size: .5em
 }
   #welcome{
-    width:94%;
+    width:92%;
     font-size: 68px;
     
   }
   
-  #grid li img {
-  width: 75px;
-  height: 80px;
+   li  {
+  min-width: 90%;
+  padding-left: 30px;
   }
 
-  #grid li:first-child img {
-    width: 96px;
-    height: 162.5px;
+  #page2{
+    max-height: 500px;
+    padding-bottom: 1200px;
+
+    
   }
 
-  #grid li:last-child img {
-    width: 171px;
-    height: 80px;
-  
-  }
-  #page3{
-    margin-left: -50px;
-    padding-top: 300px
-
+  #build{
+    font-size: .8em;
   }
 
 
